@@ -42,19 +42,6 @@ class compression:
                     f2.write(binascii.unhexlify(width_bits))
                     return str(time() - x)
 
-        def Count_adds(En, Row1, Row):
-
-            Row += 1
-
-            if Row == (8192 * 4) - 1:
-                Row = 0
-
-            if En == (8192 * 4) - 1:
-                En = 255
-            En += 1
-
-            return En, Row1, Row
-
         import re
 
         def find_smallest_longl_F_values(input_string):
@@ -463,10 +450,7 @@ class compression:
 
                                         Extract1 = 0
 
-                                        if (
-                                            len(TUPLE) <= long_11
-                                            or Circle_times == 255
-                                        ):
+                                        if (len(TUPLE) or Circle_times == 255):
 
                                             long_11 = len(TUPLE)
 
@@ -497,9 +481,13 @@ class compression:
                                                 )
 
                                             if Circle_times != 1:
+                                            
 
+                                                if INFOS!="":
+                                                	INFOS=INFO
                                                 File_information5_17 = (
                                                     "1" + SCircle_times + INFOS
+                                                
                                                 )
 
                                             N4 = 2
