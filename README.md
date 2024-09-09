@@ -28,3 +28,12 @@ Based on the use of RLE in your code, it is likely that this algorithm is applyi
 Compression: During the compression phase, the algorithm scans the input data and identifies sequences of repeating values. It then replaces these sequences with a single value representing the data and a count of how many times it repeats. This compressed output is usually smaller in size than the original data.
 
 Decompression: During the decompression phase, the algorithm reverses the compression process by expanding the run-length encoded data back into the original uncompressed form. This allows the original data to be recovered without losing any information.
+
+Quantum Compression:
+Arithmetic Method by formula:
+
+Number_of_the_file =((((Number_of_the_file * Square_of_ROOT) + Add_Numbers) // 3) * Multiply)
+
+Memory needs of RAM (32 bits / 8 bits per byte = 4 bytes). 2^26 Bytes ≈ 64 MB Qubits need 805306370
+
+Maximum k2=( 2^{(2^{(2^{(255 \times 8)})})} + 1)+ (infinity)
