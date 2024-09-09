@@ -450,7 +450,7 @@ class compression:
 
                                         Extract1 = 0
 
-                                        if Circle_times <= 255:
+                                        if (len(TUPLE) or Circle_times == 255):
 
                                             long_11 = len(TUPLE)
 
@@ -459,7 +459,8 @@ class compression:
                                             Circle_times2 = Circle_times
 
                                         if (
-                                            Circle_times>250
+                                            len(TUPLE) > long_11
+                                            and Circle_times > Circle_times2 + 1
                                             or Circle_times == 255
                                         ):
 

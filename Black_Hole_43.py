@@ -8,10 +8,10 @@ import sys
 # @Author Jurijus Pacalovas
 # Get the name of the current script
 
-if os.path.basename(sys.argv[0]) != 'Black_Hole_41.py':
-    sys.exit("This is not 'Black_Hole_41.py'.")
+if os.path.basename(sys.argv[0]) != 'Black_Hole_43.py':
+    sys.exit("This is not 'Black_Hole_43.py'.")
 
-print("The script 'Black_Hole_41.py' is currently running.")
+print("The script 'Black_Hole_43.py' is currently running.")
 
 
 class compression:
@@ -41,6 +41,8 @@ class compression:
                 with open(name[:-2], "wb") as f2:
                     f2.write(binascii.unhexlify(width_bits))
                     return str(time() - x)
+
+
 
         import re
 
@@ -257,6 +259,7 @@ class compression:
                         if i == 1:
 
                             Ex = 1
+                            INFOS=""
 
                             if Ex == 1:
 
@@ -450,7 +453,10 @@ class compression:
 
                                         Extract1 = 0
 
-                                        if Circle_times <= 255:
+                                        if (
+                                            len(TUPLE) <= long_11
+                                            or Circle_times == 65535
+                                        ):
 
                                             long_11 = len(TUPLE)
 
@@ -459,8 +465,8 @@ class compression:
                                             Circle_times2 = Circle_times
 
                                         if (
-                                            Circle_times>250
-                                            or Circle_times == 255
+                                            Circle_times2 >65500
+                                            or Circle_times ==65535
                                         ):
 
                                             N3 = 2
@@ -470,7 +476,7 @@ class compression:
                                         if N3 == 2:
 
                                             SCircle_times = format(
-                                                Circle_times2, '08b'
+                                                Circle_times2, '016b'
                                             )
 
                                             if Circle_times == 1:
@@ -480,13 +486,10 @@ class compression:
                                                 )
 
                                             if Circle_times != 1:
-                                            
-
-                                                if INFOS!="":
-                                                	INFOS=INFO
-                                                File_information5_17 = (
+                                                    if len(INFOS)==0:
+                                                    	INFOS=INFO
+                                                    File_information5_17 = (
                                                     "1" + SCircle_times + INFOS
-                                                
                                                 )
 
                                             N4 = 2
@@ -600,12 +603,12 @@ class compression:
                                                     if Circle_times3 == 0:
 
                                                         Circle_times4 = int(
-                                                            INFO[:8], 2
+                                                            INFO[:16], 2
                                                         )
 
                                                         # print(Circle_times4)
 
-                                                        INFO = INFO[8:]
+                                                        INFO = INFO[16:]
 
                                                     while Extract1 != 1:
 
@@ -969,11 +972,11 @@ class compression:
 
                                     if Circle_times3 == 0:
 
-                                        Circle_times4 = int(INFO[:8], 2)
+                                        Circle_times4 = int(INFO[:16], 2)
 
                                         # print(Circle_times4)
 
-                                        INFO = INFO[8:]
+                                        INFO = INFO[16:]
 
                                     while Extract1 != 1:
                                     	
