@@ -1,15 +1,15 @@
 # Black_Hole_41
-Black_Hole_41
+Black_Hole_1-41
 @Author Jurijus Pacalovas 
 Algorithm: Black_Hole_41-43:
-Simular to RLE and huffman from centre to the top comress on the compress 5+ bytes to limit.
+Similar to RLE and Huffman from the centre to the top compress on the compress 5+ bytes to limit.
 @Author Jurijus Pacalovas
 
 Black Hole 34-40 Algorithm:
 
 Times compress 1-255
 
-From center to the top and save position. File Check that the size of the block same size or less or if 01 is 1 bit bigger and fractal manipulation of bits about 2^26 varations En 6-8191 Author: Jurijus Pacalovas Quantum Software
+From the centre to the top and save position. File Check that the size of the block same size or less or if 01 is 1 bit bigger and fractal manipulation of bits about 2^26 variations En 6-8191 Author: Jurijus Pacalovas Quantum Software
 
 Algorithm Black_Hole_34 includes algorithms such as:
 
