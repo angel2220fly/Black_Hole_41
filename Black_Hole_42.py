@@ -8,10 +8,10 @@ import sys
 # @Author Jurijus Pacalovas
 # Get the name of the current script
 
-if os.path.basename(sys.argv[0]) != 'Black_Hole_41.py':
-    sys.exit("This is not 'Black_Hole_41.py'.")
+if os.path.basename(sys.argv[0]) != 'Black_Hole_42.py':
+    sys.exit("This is not 'Black_Hole_42.py'.")
 
-print("The script 'Black_Hole_41.py' is currently running.")
+print("The script 'Black_Hole_42.py' is currently running.")
 
 
 class compression:
